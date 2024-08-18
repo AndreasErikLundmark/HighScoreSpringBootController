@@ -1,10 +1,12 @@
 package dev.RandomGame.controller;
 
+import dev.RandomGame.model.HighScore;
 import dev.RandomGame.repository.HighScoreRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.TreeMap;
 
 @RestController
@@ -18,7 +20,7 @@ public class HighScoreController {
         this.repository = repository;
     }
     @GetMapping
-    public TreeMap<String, Integer> findAll() {
+    public List<HighScore> findAll() {
         return repository.getHighScores();
     }
 

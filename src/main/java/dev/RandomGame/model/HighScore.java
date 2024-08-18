@@ -3,6 +3,7 @@ package dev.RandomGame.model;
 
 import org.springframework.stereotype.Component;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 
@@ -13,7 +14,6 @@ public class HighScore {
     private String date;
 
 
-
     public HighScore(String name, int score) {
         this.name = name;
         this.score = score;
@@ -21,10 +21,22 @@ public class HighScore {
 
     }
 
+    /**
+     * Formats the date to a readable format
+     *
+     * @param date
+     * @return formatted date
+     */
+    public String formatDate(Date date) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        String formattedDate = sdf.format(date);
+        return formattedDate;
+    }
+
     public String getName() {
         return name;
     }
-
 
 
     void setName(String name) {
@@ -42,6 +54,16 @@ public class HighScore {
     public String getDate() {
         return date;
     }
+
+    @Override
+    public String toString() {
+        return "HighScore{" +
+                "name='" + name + '\'' +
+                ", score=" + score +
+                ", date='" + date + '\'' +
+                '}';
+    }
+
 
     @Override
     public boolean equals(Object o) {

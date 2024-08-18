@@ -10,22 +10,23 @@ class HighScoreRepositoryTest {
     @Test
     void add() {
         highScoreRepository.add("AndyPandy", 1000);
-        if (highScoreRepository.highScores.containsKey("AndyPandy")) {
+        if (highScoreRepository.highScores.contains("AndyPandy")) {
             System.out.println("AndyPandy has been added to the high scores");
         }
         int score = highScoreRepository.getScore("AndyPandy");
         assertEquals(1000, score);
+        highScoreRepository.remove("AndyPandy");
     }
 
     @Test
     void remove() {
 
         highScoreRepository.add("AndyPandy", 1000);
-        if(highScoreRepository.highScores.containsKey("AndyPandy")) {
+        if(highScoreRepository.highScores.contains("AndyPandy")) {
             System.out.println("AndyPandy has been added to the high scores");
         }
         highScoreRepository.remove("AndyPandy");
-        if (!highScoreRepository.highScores.containsKey("AndyPandy")) {
+        if (!highScoreRepository.highScores.contains("AndyPandy")) {
             System.out.println("AndyPandy has been removed from the high scores");
         }
 
@@ -35,7 +36,7 @@ class HighScoreRepositoryTest {
     void update() {
 
         highScoreRepository.add("AndyPandy", 1000);
-        if(highScoreRepository.highScores.containsKey("AndyPandy")) {
+        if(highScoreRepository.highScores.contains("AndyPandy")) {
             System.out.println("AndyPandy has been added to the high scores");
         }
         highScoreRepository.update("AndyPandy", 2000);
@@ -52,6 +53,6 @@ class HighScoreRepositoryTest {
       System.out.println(highScoreRepository.highScores.size());
       highScoreRepository.clear();
       assertEquals(0, highScoreRepository.highScores.size());
-
+        System.out.println(highScoreRepository.highScores.size());
     }
 }
