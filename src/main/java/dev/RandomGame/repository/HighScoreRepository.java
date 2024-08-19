@@ -10,20 +10,20 @@ public class HighScoreRepository {
 
     HighScore highScore;
 
+    FileWriter fileWriter;
+
     List<HighScore> highScores;
 
     public HighScoreRepository() {
 
-        this.highScores = new ArrayList<>();
-        add("John", 100);
-        add("Jane", 200);
-        add("Andreas", 300);
-
+        this.fileWriter = new FileWriter();
+        this.highScores = fileWriter.loadFromFile();
     }
 
     public void add(String name, int score) {
         HighScore highScore = new HighScore(name, score);
         highScores.add(highScore);
+        fileWriter.saveToFile(highScores);
 //        System.out.println("High Score added: " + highScore.toString());
     }
 
@@ -37,6 +37,7 @@ public class HighScoreRepository {
                 iterator.remove();
                 found = true;
                 System.out.println("High score removed: " + highScore.toString());
+                fileWriter.saveToFile(highScores);
                 break;
             }
         }
@@ -51,6 +52,7 @@ public class HighScoreRepository {
                 h.setScore(score);
 //                phoneBookFileWriter.saveToFile(friends);
                 System.out.println("High Score updated: " + h.toString());
+                fileWriter.saveToFile(highScores);
                 return;
             }
         }
@@ -59,6 +61,7 @@ public class HighScoreRepository {
 
     public void clear() {
         highScores.clear();
+        fileWriter.saveToFile(highScores);
     }
 
     public int getScore(String name) {
