@@ -5,6 +5,7 @@ HTTP request handling for a high score list to be used in any application, possi
 RESTful controller Spring Boot application:
 CRUD operations (Create, Read, Update, Delete) 
 <br>
+<br>
 findAll High score list..
 <h4>@RestController</h4>
 <h4>@RequestMapping("/highscore")</h4>
