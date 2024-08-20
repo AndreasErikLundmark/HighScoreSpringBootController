@@ -1,59 +1,44 @@
 [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.oracle.com/java/)
 
 
-        <h1>High Score Backend Web Service</h1>
+# High Score Backend Web Service
 
-        <p>This service handles HTTP requests for managing a high score list, suitable for use in applications such as games.</p>
+This service handles HTTP requests for managing a high score list, suitable for use in applications such as games.
 
-        <h2>Overview</h2>
-        <ul>
-            <li><strong>Framework:</strong> Spring Boot</li>
-            <li><strong>Architecture:</strong> RESTful API</li>
-            <li><strong>Operations:</strong> Provides CRUD (Create, Read, Update, Delete) functionalities for high scores.</li>
-        </ul>
+## Overview
+- **Framework:** Spring Boot
+- **Architecture:** RESTful API
+- **Operations:** Provides CRUD (Create, Read, Update, Delete) functionalities for high scores.
 
-        <h2>Endpoints</h2>
+## Endpoints
 
-        <h3>1. Get All High Scores</h3>
-        <ul>
-            <li><strong>Method:</strong> <code>GET</code></li>
-            <li><strong>Endpoint:</strong> <code>/highscore</code></li>
-            <li><strong>Description:</strong> Retrieves the complete list of high scores.</li>
-        </ul>
+### 1. Get All High Scores
+- **Method:** `GET`
+- **Endpoint:** `/highscore`
+- **Description:** Retrieves the complete list of high scores.
 
-        <h3>2. Add a High Score</h3>
-        <ul>
-            <li><strong>Method:</strong> <code>POST</code></li>
-            <li><strong>Endpoint:</strong> <code>/highscore/{name}/{score}</code></li>
-            <li><strong>Description:</strong> Adds a new high score entry with the specified name and score.</li>
-        </ul>
+### 2. Add a High Score
+- **Method:** `POST`
+- **Endpoint:** `/highscore/{name}/{score}`
+- **Description:** Adds a new high score entry with the specified name and score.
 
-        <h3>3. Remove a High Score</h3>
-        <ul>
-            <li><strong>Method:</strong> <code>DELETE</code></li>
-            <li><strong>Endpoint:</strong> <code>/highscore/{name}</code></li>
-            <li><strong>Description:</strong> Removes the high score entry associated with the specified name.</li>
-        </ul>
+### 3. Remove a High Score
+- **Method:** `DELETE`
+- **Endpoint:** `/highscore/{name}`
+- **Description:** Removes the high score entry associated with the specified name.
 
-        <h3>4. Update a High Score</h3>
-        <ul>
-            <li><strong>Method:</strong> <code>PUT</code></li>
-            <li><strong>Endpoint:</strong> <code>/highscore/{name}/{score}</code></li>
-            <li><strong>Description:</strong> Updates the score for an existing entry identified by the name.</li>
-        </ul>
+### 4. Update a High Score
+- **Method:** `PUT`
+- **Endpoint:** `/highscore/{name}/{score}`
+- **Description:** Updates the score for an existing entry identified by the name.
 
-        <h3>5. Clear All High Scores</h3>
-        <ul>
-            <li><strong>Method:</strong> <code>DELETE</code></li>
-            <li><strong>Endpoint:</strong> <code>/highscore/clear</code></li>
-            <li><strong>Description:</strong> Deletes all high score entries.</li>
-        </ul>
+### 5. Clear All High Scores
+- **Method:** `DELETE`
+- **Endpoint:** `/highscore/clear`
+- **Description:** Deletes all high score entries.
 
-        <h2>How to Run</h2>
-        <ol>
-            <li><strong>Step 1:</strong> Open the project directory.</li>
-            <li><strong>Step 2:</strong> Run the <code>HighScoreApplication.java</code> file to start the application.</li>
-        </ol>
-        <p><strong>Data Persistence:</strong> The high score list is also stored in the <code>highscores.json</code> file, managed via the <code>FileWriter</code> class.</p>
-    </div>
+## How to Run
+1. **Step 1:** Open the project directory.
+2. **Step 2:** Run the `HighScoreApplication.java` file to start the application.
 
+**Data Persistence:** The high score list is also stored in the `highscores.json` file, managed via the `FileWriter` class.
