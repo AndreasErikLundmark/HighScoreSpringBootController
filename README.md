@@ -1,8 +1,6 @@
 [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.oracle.com/java/)
 
 
-<body>
-    <div class="container">
         <h1>High Score Backend Web Service</h1>
 
         <p>This service handles HTTP requests for managing a high score list, suitable for use in applications such as games.</p>
@@ -58,4 +56,4 @@
         </ol>
         <p><strong>Data Persistence:</strong> The high score list is also stored in the <code>highscores.json</code> file, managed via the <code>FileWriter</code> class.</p>
     </div>
-</body>
+
