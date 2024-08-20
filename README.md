@@ -23,8 +23,11 @@ clear High score list
 <h4> @DeleteMapping("/clear")</h4>
 
 <br>
-Run HighScoreApplication.java to start application
+<ol>
+<li>Open catalog</li>
 
-High score list is also stored in "highscores.json" via filewriter class
+<li>Run HighScoreApplication.java to start application</li>
 
-  
+<li>High score list is also stored in "highscores.json" via filewriter class</li>
+
+</ol>
