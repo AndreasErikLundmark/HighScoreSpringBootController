@@ -7,20 +7,20 @@ RESTful controller Spring Boot application:
 CRUD operations (Create, Read, Update, Delete) 
 
 findAll High score list..
-@RestController
-@RequestMapping("/highscore")
+<h4>@RestController</h4>
+<h4>@RequestMapping("/highscore")</h4>
 
 add High score
- @PostMapping("/{name}/{score}")
+<h4> @PostMapping("/{name}/{score}")</h4>
 
 remove High score
- @DeleteMapping("/{name}")
+<h4> @DeleteMapping("/{name}")</h4>
 
 Update High score
-@PutMapping("/{name}/{score}")
+<h4>@PutMapping("/{name}/{score}")</h4>
 
 clear High score list
- @DeleteMapping("/clear")
+<h4> @DeleteMapping("/clear")</h4>
 
 
 Run HighScoreApplication.java to start application
