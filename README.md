@@ -1,4 +1,7 @@
-# High Score backend web service
+[![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.oracle.com/java/)
+
+
+# High Score backend web service 
 
 HTTP request handling for a high score list to be used in any application, possibly a game. 
 
@@ -28,6 +31,6 @@ clear High score list
 
 <li>Run HighScoreApplication.java to start application</li>
 
-<li>High score list is also stored in "highscores.json" via filewriter class</li>
-
 </ol>
+
+(High score list is also stored in "highscores.json" via filewriter class)
