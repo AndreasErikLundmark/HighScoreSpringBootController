@@ -10,8 +10,8 @@ findAll High score list..
 <h4>@RestController</h4>
 <h4>@RequestMapping("/highscore")</h4>
 
-add High score
-<h4> @PostMapping("/{name}/{score}")</h4>
+<p>add High score
+<h4> @PostMapping("/{name}/{score}")</h4></p>
 
 remove High score
 <h4> @DeleteMapping("/{name}")</h4>
