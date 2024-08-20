@@ -1,32 +1,6 @@
 [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.oracle.com/java/)
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>High Score Backend Web Service</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-    </style>
-</head>
 <body>
     <div class="container">
         <h1>High Score Backend Web Service</h1>
@@ -85,4 +59,3 @@
         <p><strong>Data Persistence:</strong> The high score list is also stored in the <code>highscores.json</code> file, managed via the <code>FileWriter</code> class.</p>
     </div>
 </body>
-</html>
